@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kouta8888</title>
 	<meta name="description" content="kouta0202">
-	<script type="text/javascript">
-var i = 0;
-var str = "KOUTA8888";
+<script>
+  var str = "KOUTA8888";
+  var i = 0;
 
-function one_char() {
-    document.title = str.substring(0, i++);
-    // 条件部分を常に真にする
-    setTimeout("one_char();", 200);
-}
+  function displayChar() {
+    document.title = str.charAt(i);
+    i++;
+    if (i === str.length) {
+      i = 0;
+    }
+    setTimeout(displayChar, 200);
+  }
 
-window.onload = one_char;
+  window.onload = displayChar;
 </script>
     <style>
    /* PC用のスタイル */
