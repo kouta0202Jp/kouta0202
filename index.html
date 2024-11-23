@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kouta8888</title>
 	<meta name="description" content="kouta0202">
+	<script type="text/javascript">
+var i = 0;
+var str = "KOUTA8888";
+
+function one_char() {
+    document.title = str.substring(0, i++);
+    // 条件部分を常に真にする
+    setTimeout("one_char();", 200);
+}
+
+window.onload = one_char;
+</script>
     <style>
    /* PC用のスタイル */
 @media(min-width: 751px) {
