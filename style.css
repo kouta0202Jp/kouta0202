@@ -29,17 +29,21 @@ b{
 .img img {
   border: 4px solid red; /* 初期状態のボーダー */
   border-radius: 50%;
+  margin-top:15px;
   width:200px;
   height:200px;
   animation: rainbow 3s infinite linear; /* アニメーション */
 }
 
 @keyframes rainbow {
-  0% { border-color: red; }
-  25% { border-color: orange; }
-  50% { border-color: yellow; }
-  75% { border-color: green; }
-  100% { border-color: blue; }
+    0%{background: #e60000}
+    14%{background: #f39800}
+    28%{background: #fff100}
+    42%{background: #009944}
+    56%{background: #0068b7}
+    70%{background: #1d2088}
+    85%{background: #920783}
+    100%{background: #e60000}
 }
 @media (max-width: 768px) {
   iframe {
