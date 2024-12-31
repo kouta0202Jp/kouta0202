@@ -51,3 +51,6 @@ b{
     height: 191px;
   }
 }
+.card {
+  max-width:600px;
+}
