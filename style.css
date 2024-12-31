@@ -36,14 +36,14 @@ b{
 }
 
 @keyframes rainbow {
-    0%{background: #e60000}
-    14%{background: #f39800}
-    28%{background: #fff100}
-    42%{background: #009944}
-    56%{background: #0068b7}
-    70%{background: #1d2088}
-    85%{background: #920783}
-    100%{background: #e60000}
+0%{border-color: #e60000}
+14%{border-color: #f39800}
+28%{border-color: #fff100}
+42%{border-color: #009944}
+56%{border-color: #0068b7}
+70%{border-color: #1d2088}
+85%{border-color: #920783}
+100%{border-color: #e60000}
 }
 @media (max-width: 768px) {
   iframe {
