@@ -47,8 +47,3 @@ b{
     height: 191px;
   }
 }
-.card {
-  margin: 10px 10px 10px 10px;
-  backdrop-filter: blur(20px);
-  background:#fff;
-}
