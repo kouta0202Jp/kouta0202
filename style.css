@@ -1,7 +1,15 @@
-.img {text-align:center;}
-center {margin:0;padding:0;}
-b{margin:0;font-size:23px;}
-.j1 img{padding-left:10px;}
+.img {
+  text-align:center;
+}
+center {
+  margin:0;padding:0;
+}
+b{
+  margin:0;font-size:23px;
+}
+.j1 img{
+  padding-left:10px;
+}
 .j3 {
   opacity: 1;
   animation: fadeOut 0.9s ease-in-out, disappear 1s 0.9s forwards;
@@ -38,4 +46,9 @@ b{margin:0;font-size:23px;}
     width: 339px;
     height: 191px;
   }
+}
+.card {
+  margin: 10px 10px 10px 10px;
+  backdrop-filter: blur(20px);
+  background:#fff;
 }
