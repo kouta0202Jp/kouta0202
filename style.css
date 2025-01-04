@@ -45,11 +45,6 @@ b{
 85%{border-color: #920783}
 100%{border-color: #e60000}
 }
-@media (max-width: 768px) {
-  iframe {
-    width: 100%;
-  }
-}
 .card {
   max-width:600px;
   margin:0 auto;
@@ -67,4 +62,38 @@ table th,table td{
 
 table tr:nth-child(odd){
   background-color: #eee
+}
+.skill-container {
+    max-width: 600px;
+    margin: auto;
+    background:#eee;
+    padding:25px;
+    border-radius: 3%;
+    margin-top: 10px;;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 100%;
+}
+
+.html {
+    background-color: #e44d26; /* HTMLの色 */
+    width: 48%; /* HTMLスキルの幅 */
+}
+
+.css {
+    background-color: #2965f1; /* CSSの色 */
+    width: 18%; /* CSSスキルの幅 */
 }
