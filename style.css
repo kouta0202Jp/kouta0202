@@ -48,13 +48,12 @@ b{
 .card {
   max-width:600px;
   margin:0 auto;
-  border-radius:3%;
-  background:rgb(255,255,255)
 }
 table{
   width:100%;
   border-collapse: collapse;
   border-spacing: 0;
+  background:white
 }
 
 table th,table td{
@@ -71,7 +70,7 @@ table tr:nth-child(odd){
     background:#eee;
     padding:25px;
     border-radius: 3%;
-    margin-top: 10px;;
+    margin-top: 3px;;
 }
 
 .skill {
