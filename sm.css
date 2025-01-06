@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
 body {
   background: linear-gradient(255deg,#7233f5,#13de30,#64e4ee);
   background-size: 180% 180%;
