@@ -46,7 +46,7 @@ b{
 100%{border-color: #e60000}
 }
 .card {
-  max-width:600px;
+  max-width:650px;
   margin:0 auto;
 }
 table{
@@ -114,4 +114,13 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+.b {
+  border-radius: 0.5rem;
+  background:white;
+  padding:10 0 10 0;
+  width:100%;
+  text-align:center;
+  font-size:25px;
+  margin-top:6px;
 }
