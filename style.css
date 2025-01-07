@@ -99,22 +99,9 @@ table tr:nth-child(odd){
     width: 18%; /* CSSスキルの幅 */
 }
 body {
-  background: linear-gradient(255deg,#7233f5,#13de30,#64e4ee);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  background: black;
 }
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+p,b,center{color:white;}
 .b {
   border-radius: 0.5rem;
   background:white;
