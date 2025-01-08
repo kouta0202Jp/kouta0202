@@ -27,7 +27,8 @@
 <a href="https://github.com/kouta0202Jp"><img src="https://cdn.icon-icons.com/icons2/3685/PNG/512/github_logo_icon_229278.png" width="50" height="50" alt="github"></a>
 </div>
   <br>静岡県在住の一般人.悩みはサイトに書くことがないこと。
-    <hr>
+<button id="playPauseButton">停止</button>
+  <audio id="myAudio" src="My Heart [NCS Release].mp3"></audio>
 </center>
 <table>
 	<tbody>
@@ -70,5 +71,19 @@
 </div>
 </center>
 </div>
+  <script>
+const playPauseButton = document.getElementById('playPauseButton');
+const audio = document.getElementById('myAudio');
+
+playPauseButton.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    playPauseButton.textContent = 'Stop';
+  } else {
+    audio.pause();
+    playPauseButton.textContent = 'Play';
+  }
+});
+</script>
 </body>
 </html>
