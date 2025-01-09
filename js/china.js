@@ -22,7 +22,7 @@ async function checkAndRedirect() {
     if (countryCodeCookie) {
         // クッキーが存在する場合は判定をスキップ
         console.log('Country code from cookie:', countryCodeCookie);
-        if (countryCodeCookie === 'CN') {
+        if (countryCodeCookie === 'JP') {
             window.location.href = '/404.html'; // 404.html にリダイレクト
         }
     } else {
