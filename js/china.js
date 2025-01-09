@@ -5,7 +5,7 @@ async function checkAccess() {
         const data = await response.json();
 
         // 国コードがCN（中国）であれば404.htmlにリダイレクト
-        if (data.countryCode === 'CN') {
+        if (data.countryCode === 'IE') {
             window.location.href = '404.html';
         }
     } catch (error) {
