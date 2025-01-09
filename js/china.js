@@ -7,7 +7,7 @@ async function checkAndRedirect() {
         }
         const data = await response.json();
         // 中国からのアクセスか確認
-        if (data.country_code === 'CA') {
+        if (data.country_code === 'CN') {
             window.location.href = '/404.html'; // 404.html にリダイレクト
         }
     } catch (error) {
