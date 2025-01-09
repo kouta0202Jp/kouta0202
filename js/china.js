@@ -40,7 +40,7 @@ async function checkAndRedirect() {
             setCookie('country_code', countryCode, 7);
 
             // 中国からのアクセスであればリダイレクト
-            if (countryCode === 'JA') {
+            if (countryCode === 'JP') {
                 window.location.href = '/404.html';
             }
         } catch (error) {
