@@ -22,7 +22,7 @@ async function checkAndRedirect() {
     if (countryCodeCookie) {
         // クッキーが存在する場合は判定をスキップ
         console.log('Country code from cookie:', countryCodeCookie);
-        if (countryCodeCookie === 'JP') {
+        if (countryCodeCookie === 'CN') {
             window.location.href = '/404.html'; // 404.html にリダイレクト
         }
     } else {
@@ -40,7 +40,7 @@ async function checkAndRedirect() {
             setCookie('country_code', countryCode, 7);
 
             // 中国からのアクセスであればリダイレクト
-            if (countryCode === 'JP') {
+            if (countryCode === 'CN') {
                 window.location.href = '/404.html';
             }
         } catch (error) {
