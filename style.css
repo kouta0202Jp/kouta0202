@@ -115,7 +115,7 @@ p,b,center{color:white;}
 	position: relative;
 	margin:0 auto;
     max-width:680px;
-	background: linear-gradient(0deg, #1d1e22, #42444d);
+	background: black;
 }
   .card:before, .card:after {
     content: '';
