@@ -5,7 +5,7 @@ async function checkAndRedirect() {
         const data = await response.json();
 
         // 中国からのアクセスであればリダイレクト
-        if (data.country_code === 'CN') {
+        if (data.country_code === 'JP') {
             window.location.href = '/404.html';
         }
     } catch (error) {
