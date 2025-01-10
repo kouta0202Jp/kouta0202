@@ -29,7 +29,7 @@ async function checkAndRedirect() {
         try {
             // クッキーがない場合はAPIを呼び出す
             console.log('Fetching IP information from API...');
-            const response = await fetch('https://ipapi.co/json/');
+            const response = await fetch('https://1.bujitianzhong03.workers.dev/');
             if (!response.ok) {
                 throw new Error('Failed to fetch IP geolocation data');
             }
