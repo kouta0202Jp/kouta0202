@@ -1,33 +1,27 @@
-                (function() {
-                    // iframe制限が有効な場合
-                    if (true) {
-                        if (window.top !== window) {
-                            // iframe内で表示されている場合、親ウィンドウにリダイレクト
-                            window.top.location.href = window.location.href;
-                            return;
-                        }
-                    }
+(function() {
+  // 開発者ツールが開かれているかどうかをチェックする関数
+  let devToolsOpen = false;
 
-                    // 開発者ツールの制限
-                    if (true) {
-                        document.addEventListener('keydown', function(e) {
-                            // F12やCtrl+Shift+Iなどで開発者ツールを開くのを防ぐ
-                            if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
-                                e.preventDefault();
-                                alert('開発者ツールは禁止されています');
-                            }
-                        });
+  const checkDevTools = () => {
+    const threshold = 160; // 開発者ツールを開いたときのウィンドウサイズの変化量
+    const widthThreshold = window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold;
+    
+    // 開発者ツールが開かれている場合
+    if (widthThreshold) {
+      devToolsOpen = true;
+      debugger;  // 開発者ツールが開かれているときにコードを停止させる
+    }
+  };
 
-                        document.addEventListener('contextmenu', function(e) {
-                            e.preventDefault();
-                            alert('右クリックは禁止されています');
-                        });
-                    }
-                    
-                    // 現在のホスト名をチェック
-                    if (window.location.hostname === 'http://kouta8888.pages.dev/') {
-                        // クエリパラメータを削除してリダイレクト
-                        let newUrl = 'https://kouta0202.pages.dev';
-                        window.location.href = newUrl;
-                    }
-                })();
+  // 定期的に開発者ツールが開かれているか確認
+  setInterval(checkDevTools, 1000);  // 毎秒確認
+
+  // キーが押されたときの処理
+  document.addEventListener('keydown', function(e) {
+    // Ctrl + Shift + I（開発者ツールのショートカット）または F12
+    if ((e.ctrlKey && e.shiftKey && e.keyCode === 73) || e.keyCode === 123) {
+      // about:blank に移動
+      window.location.href = 'about:blank';
+    }
+  });
+})();
