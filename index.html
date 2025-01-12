@@ -71,19 +71,24 @@
 <br>
 <style type="text/css">
 .button {
-  display       : inline-block;
-  border-radius : 10%;          /* 角丸       */
-  font-size     : 18pt;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
-  padding       : 12px 6px;   /* 余白       */
-  background    : #ffffff;     /* 背景色     */
-  color         : #000000;     /* 文字色     */
-  line-height   : 1em;         /* 1行の高さ  */
-  transition    : .3s;         /* なめらか変化 */
-  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 23px;
+  width: 600px;
+  height: 45px;
+  font-weight: bold;
+  transition: 0.5s;
+  background-color: #ffffff;
 }
+
 .button:hover {
+  background:#bbb;
+  color:white;
 }
 </style>
 <a href="https://koutablog.ko-me.com/" class="button">Blog</a><br>
