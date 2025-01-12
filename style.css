@@ -49,21 +49,18 @@ b{
   max-width:650px;
   margin:0 auto;
 }
-table{
-  width:100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  background:white
+table {
+  background: white;
 }
 
-table th,table td{
-  padding: 10px 0;
+table th, table td {
   text-align: center;
 }
 
-table tr:nth-child(odd){
-  background-color: #eee
+table tr:nth-child(odd) {
+  background-color: #eee;
 }
+
 .skill-container {
     max-width: 600px;
     margin: auto;
@@ -111,35 +108,28 @@ p,b,center{color:white;}
   font-size:25px;
   margin-top:6px;
 }
-.card {
-	position: relative;
-	margin:0 auto;
-    max-width:680px;
-	background: black;
+.card.custom-card {
+  position: relative;
+  margin: 20px auto;
+  max-width: 680px;
+  background: black;
+  color: white;
 }
-  .card:before, .card:after {
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    animation: glow 50s linear infinite;
-  }
-  .card:after {
-    filter: blur(30px);
-  }
-  @keyframes glow {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 500% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
+
+.card.custom-card:before,
+.card.custom-card:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: glow 50s linear infinite;
+}
+
+.card.custom-card:after {
+  filter: blur(30px);
+}
