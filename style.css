@@ -37,7 +37,7 @@ table{
   width:100%;
   border-collapse: collapse;
   border-spacing: 0;
-  background:white
+  background:white;
 }
 
 table th,table td{
@@ -86,7 +86,6 @@ body {
   background: white;
 color:black;
 }
-p,b,center{color:white;}
 .b {
   border-radius: 0.5rem;
   background:white;
