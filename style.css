@@ -10,22 +10,6 @@ b{
 .j1 img{
   padding-left:10px;
 }
-.j3 {
-  opacity: 1;
-  animation: fadeOut 0.9s ease-in-out, disappear 1s 0.9s forwards;
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  to {
-    display: none;
-  }
-}
 .img img {
   border: 4px solid red; /* 初期状態のボーダー */
   border-radius: 50%;
@@ -99,7 +83,8 @@ table tr:nth-child(odd){
     width: 18%; /* CSSスキルの幅 */
 }
 body {
-  background: black;
+  background: white;
+color:black;
 }
 p,b,center{color:white;}
 .b {
