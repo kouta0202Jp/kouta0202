@@ -3,6 +3,7 @@
 }
 center {
   margin:0;padding:0;
+  color:black;
 }
 b{
   margin:0;font-size:23px;
@@ -38,6 +39,7 @@ table{
   border-collapse: collapse;
   border-spacing: 0;
   background:white;
+  color:black;
 }
 
 table th,table td{
@@ -83,8 +85,8 @@ table tr:nth-child(odd){
     width: 18%; /* CSSスキルの幅 */
 }
 body {
-  background: white;
-color:black;
+  background: url(https://onfilters.wordpress.com/wp-content/uploads/2014/06/8.gif?w=470&h=352);
+color:white;
 }
 .b {
   border-radius: 0.5rem;
