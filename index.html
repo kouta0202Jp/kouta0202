@@ -41,8 +41,6 @@
 </center>
 </div>
 <br>
-<button id="playPauseButton">停止</button>
-  <audio id="myAudio" src="シャイニングスター.mp3" autoplay></audio>
 </center>
 <table>
 	<tbody>
@@ -109,19 +107,4 @@
 </center>
 </div>
 </div>
-  <script>
-const playPauseButton = document.getElementById('playPauseButton');
-const audio = document.getElementById('myAudio');
-
-playPauseButton.addEventListener('click', () => {
-  if (audio.paused) {
-    audio.play();
-    playPauseButton.textContent = 'Stop';
-  } else {
-    audio.pause();
-    playPauseButton.textContent = 'Play';
-  }
-});
-</script>
-</body>
 </html>
