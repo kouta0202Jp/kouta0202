@@ -5,6 +5,7 @@ center {
   margin:0;padding:0;
   color:white;
 }
+center h1{color:black;}
 b{
   margin:0;font-size:23px;
 }
@@ -87,6 +88,7 @@ table tr:nth-child(odd){
 body {
   background: url(https://onfilters.wordpress.com/wp-content/uploads/2014/06/8.gif?w=470&h=352);
 color:white;
+  background-size:cover;
 }
 .b {
   border-radius: 0.5rem;
