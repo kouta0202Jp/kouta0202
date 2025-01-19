@@ -3,7 +3,6 @@
 }
 center {
   margin:0;padding:0;
-  color:white;
 }
 center h1{color:black;}
 b{
@@ -86,8 +85,8 @@ table tr:nth-child(odd){
     width: 18%; /* CSSスキルの幅 */
 }
 body {
-  background: url(https://onfilters.wordpress.com/wp-content/uploads/2014/06/8.gif?w=470&h=352);
-color:white;
+  background: white;
+color:black;
   background-size:cover;
 }
 .b {
