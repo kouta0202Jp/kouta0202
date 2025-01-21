@@ -1,101 +1,202 @@
 .img {
-  text-align:center;
+  text-align: center;
 }
+
 center {
-  margin:0;padding:0;
+  margin: 0;
+  padding: 0;
 }
-center h1{color:black;}
-b{
-  margin:0;font-size:23px;
+
+center h1 {
+  color: black;
 }
-.j1 img{
-  padding-left:10px;
+
+b {
+  margin: 0;
+  font-size: 23px;
 }
+
+.j1 img {
+  padding-left: 10px;
+}
+
 .img img {
-  border: 4px solid red; /* 初期状態のボーダー */
+  border: 4px solid red;
+  /* 初期状態のボーダー */
   border-radius: 50%;
-  margin-top:15px;
-  width:200px;
-  height:200px;
-  animation: rainbow 3s infinite linear; /* アニメーション */
+  margin-top: 15px;
+  width: 200px;
+  height: 200px;
+  animation: rainbow 3s infinite linear;
+  /* アニメーション */
 }
 
 @keyframes rainbow {
-0%{border-color: #e60000}
-14%{border-color: #f39800}
-28%{border-color: #fff100}
-42%{border-color: #009944}
-56%{border-color: #0068b7}
-70%{border-color: #1d2088}
-85%{border-color: #920783}
-100%{border-color: #e60000}
-}
-.card1 {
-  max-width:650px;
-  margin:0 auto;
-}
-table{
-  width:100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  background:white;
-  color:black;
+  0% {
+    border-color: #e60000
+  }
+
+  14% {
+    border-color: #f39800
+  }
+
+  28% {
+    border-color: #fff100
+  }
+
+  42% {
+    border-color: #009944
+  }
+
+  56% {
+    border-color: #0068b7
+  }
+
+  70% {
+    border-color: #1d2088
+  }
+
+  85% {
+    border-color: #920783
+  }
+
+  100% {
+    border-color: #e60000
+  }
 }
 
-table th,table td{
+.card1 {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: white;
+  color: black;
+}
+
+table th,
+table td {
   padding: 10px 0;
   text-align: center;
 }
 
-table tr:nth-child(odd){
+table tr:nth-child(odd) {
   background-color: #eee
 }
+
 .skill-container {
-    max-width: 600px;
-    margin: auto;
-    background:#eee;
-    padding:25px;
-    border-radius: 3%;
-    margin-top: 10px;;
+  max-width: 600px;
+  margin: auto;
+  background: #eee;
+  padding: 25px;
+  border-radius: 3%;
+  margin-top: 10px;
+  ;
 }
 
 .skill {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .skill-bar {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
 }
 
 .skill-progress {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .html {
-    background-color: #e44d26; /* HTMLの色 */
-    width: 48%; /* HTMLスキルの幅 */
+  background-color: #e44d26;
+  /* HTMLの色 */
+  width: 48%;
+  /* HTMLスキルの幅 */
 }
 
 .css {
-    background-color: #2965f1; /* CSSの色 */
-    width: 18%; /* CSSスキルの幅 */
+  background-color: #2965f1;
+  /* CSSの色 */
+  width: 18%;
+  /* CSSスキルの幅 */
 }
+
 body {
   background: white;
-color:black;
-  background-size:cover;
+  color: black;
+  background-size: cover;
 }
+
 .b {
   border-radius: 0.5rem;
-  background:white;
-  padding:10 0 10 0;
-  width:100%;
-  text-align:center;
-  font-size:25px;
-  margin-top:6px;
+  background: white;
+  padding: 10 0 10 0;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 6px;
 }
-a{display:contents;}
+
+a {
+  display: contents;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+.loading {
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1.5s 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading__logo {
+  opacity: 0;
+  animation: logo_fade 2s 0.5s forwards;
+  width: 175px;
+}
+
+@keyframes logo_fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
