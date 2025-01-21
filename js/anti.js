@@ -23,9 +23,7 @@ setInterval(function() {
   if (widthThreshold || heightThreshold) {
     if (!devtoolsOpen) {
       devtoolsOpen = true;
-      alert('開発者ツールが検出されました。');
-      // 必要に応じてリダイレクト
-      // window.location.href = 'about:blank';
+      window.location.href = 'about:blank';
     }
   } else {
     devtoolsOpen = false;
