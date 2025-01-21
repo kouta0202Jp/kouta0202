@@ -1,37 +1,38 @@
-// 開発者ツールを検出してリダイレクトさせるための関数
 let devtoolsOpen = false;
-const threshold = 160; // 開発者ツールの表示時に差異が出る幅を設定
+const threshold = 200; // 閾値を設定
 
-// F12や右クリックを無効にする
+// ショートカットキーの無効化
 document.addEventListener('keydown', function(e) {
-  // F12キー (keyCode 123) やCtrl+Shift+Iなどで開く開発者ツールを防ぐ
-  if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) { 
+  if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key.toUpperCase()))) {
     e.preventDefault();
     alert('開発者ツールを開こうとしています!');
   }
 });
 
-// 右クリックを無効化してアラートを出す
+// 右クリックの無効化
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
   alert('右クリックが無効化されています。');
 });
 
-// 開発者ツールの開放を監視して検出する
+// 開発者ツールの検出
 setInterval(function() {
   const widthThreshold = window.outerWidth - window.innerWidth > threshold;
   const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-  
-  // 開発者ツールが開かれている場合の検出
+
   if (widthThreshold || heightThreshold) {
     if (!devtoolsOpen) {
       devtoolsOpen = true;
-      // 開発者ツールが開かれた場合、about:blank にリダイレクト
-      window.location.href = 'about:blank';
-      // デバッガーで強制的に停止（開発者ツールが開いたタイミングで動作）
-      debugger;
+      alert('開発者ツールが検出されました。');
+      // 必要に応じてリダイレクト
+      // window.location.href = 'about:blank';
     }
   } else {
     devtoolsOpen = false;
   }
 }, 1000);
+
+// URLのチェックとリダイレクト
+if (window.location.hostname !== 'kouta8888.pages.dev') {
+  window.location.href = 'https://kouta8888.pages.dev/';
+}
