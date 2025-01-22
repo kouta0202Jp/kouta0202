@@ -11,9 +11,11 @@ center h1 {
   color: black;
 }
 
-b {
-  margin: 0;
-  font-size: 23px;
+.name {
+  transition: 1.5s;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translateY(131px);
 }
 
 .j1 img {
