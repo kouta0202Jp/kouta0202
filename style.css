@@ -14,18 +14,6 @@ center h1 {
 .name {
   font-size: 30px;
   font-weight: bold;
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(100%);
-  animation: slideInFromBottom 0.5s forwards;
-  animation-delay: 1s; /* 0.1秒ずつ遅延して表示 */
-}
-
-@keyframes slideInFromBottom {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .j1 img {
