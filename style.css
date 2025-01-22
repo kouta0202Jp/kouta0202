@@ -73,11 +73,10 @@ b {
 .skill-container {
   max-width: 600px;
   margin: auto;
-  background: #eee;
+  background: #fff;
   padding: 25px;
-  border-radius: 3%;
+  border: 2px solid #000;
   margin-top: 10px;
-  ;
 }
 
 .skill {
@@ -85,31 +84,30 @@ b {
 }
 
 .skill-bar {
-  background-color: #e0e0e0;
+  background-color: #eaeaea;
   border-radius: 5px;
   overflow: hidden;
   height: 20px;
+  border: 1px solid #000;
 }
 
 .skill-progress {
   height: 100%;
-  width: 100%;
 }
 
 .html {
-  background-color: #e44d26;
-  /* HTMLの色 */
+  background-color: #000;
+  /* HTMLスキルのバー色 */
   width: 48%;
   /* HTMLスキルの幅 */
 }
 
 .css {
-  background-color: #2965f1;
-  /* CSSの色 */
+  background-color: #333;
+  /* CSSスキルのバー色 */
   width: 18%;
   /* CSSスキルの幅 */
 }
-
 body {
   background: white;
   color: black;
