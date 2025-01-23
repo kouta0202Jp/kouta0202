@@ -1,5 +1,5 @@
 翻訳.js
 やり方
 htmlに
-<script src="https://kouta8888.pages.dev/js/tool1.js"></script>
+<script src="https://8008.f5.si/js/tool1.js"></script>
 を入れるだけ
