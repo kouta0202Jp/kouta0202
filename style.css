@@ -133,6 +133,7 @@ a {
 .loading {
   font-family: "Playwrite IN", serif;
   font-optical-sizing: auto;
+  color:black;
   font-weight: <weight>;
   font-style: normal;
   position: fixed;
