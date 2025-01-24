@@ -7,10 +7,6 @@ center {
   padding: 0;
 }
 
-center h1 {
-  color: black;
-}
-
 .name {
   font-size: 30px;
   font-weight: bold;
@@ -73,7 +69,7 @@ center h1 {
 .skill-container {
   max-width: 600px;
   margin: auto;
-  background: #fff;
+  background: transparent;
   padding: 25px;
   border: 2px solid #000;
   margin-top: 10px;
@@ -96,14 +92,14 @@ center h1 {
 }
 
 .html {
-  background-color: #000;
+  background-color: #666;
   /* HTMLスキルのバー色 */
   width: 48%;
   /* HTMLスキルの幅 */
 }
 
 .css {
-  background-color: #333;
+  background-color: #666;
   /* CSSスキルのバー色 */
   width: 18%;
   /* CSSスキルの幅 */
