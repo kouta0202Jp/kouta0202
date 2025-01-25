@@ -9,34 +9,59 @@
     <img id="random-image" src="" alt="ランダム画像" style="width:100%; height:100vh; object-fit: cover;">
 
     <script>
-        const images = [
-            "https://i.namu.wiki/i/5_SevuJm48VcKQGwEK-VtiOaT-f3XngAuMqbCDIL-nbqQvlwUieLtRF3fhaYBYNfJsrS1poU289-V1JFzZszzQ.webp",
-            "https://i.ytimg.com/vi/3Y4IoKeNCLM/maxresdefault.jpg",
-            "https://i.ytimg.com/vi/fytoP--Pe94/maxresdefault.jpg",
-            "https://i.ytimg.com/vi/qBqN6TVcmHA/maxresdefault.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDKCRo0LRW5ckDjor2du6RZru6eFNRhnysg&s",
-            "https://i-ogp.pximg.net/c/540x540_70/img-master/img/2019/03/29/20/30/39/73934947_p0_square1200.jpg",
-            "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/30758143/30758143.original/r1280x720l?key=ef79a8f904d49d6f6eaea633c148e8e4e9c43c61d44f9deeab2c0ab99ce1a21b",
-            "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/30884270/30884270.original/r1280x720l?key=5ea4accdd5ff29aa5dbc3a43d2468e8be800a61b84eb16cd8c63779616a058ce",
-            "https://pbs.twimg.com/profile_images/1860976392407834624/zD-rxpFs_400x400.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEMVQ3shuhb1ru1aCErVoCQ20M2eMA8LkNrA&s",
-            "https://i.ytimg.com/vi/8L3U2ibZfDA/maxresdefault.jpg",
-            "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/30737140/30737140.original/r1280x720l?key=355e567959711a3cf8072dad89a83d38ddc86fa5f81ce5bd3cdb337cad52cee2",
-            "https://rancolle.com/images/item/uid4_1547437895/154743789595.jpg",
-            "https://i.ytimg.com/vi/N-iYDvqh81I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBI8vZiJpZWnSzXbbBnzODf-b01bg",
-            "https://nicovideo.cdn.nimg.jp/thumbnails/38475969/38475969.34026459.L",
-            "https://i.ytimg.com/vi/d2rtkE3yo4c/maxresdefault.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-bBWUAH1g08EI_UwMQ1LVqUSl-AfMUuuHDQ&s",
-            "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/38637683/38637683.95405424.original/r1280x720l?key=b5af380ead9406b550801275f3acd717a659b7fcc560c0782a5dbd261710459e",
-            "https://i.ytimg.com/vi/vREJ4Hj_ufU/maxresdefault.jpg",
-            "https://cdn-ak.f.st-hatena.com/images/fotolife/M/Matsumae_007/20240809/20240809153224.jpg"
-        ];
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同じ画像を避ける</title>
+</head>
+<body>
+    <h1>ランダム画像表示（重複回避）</h1>
+    <img id="random-image" src="" alt="ランダム画像" style="width: 300px; height: auto;">
+  <script>
+const images = [
+    "https://i.namu.wiki/i/5_SevuJm48VcKQGwEK-VtiOaT-f3XngAuMqbCDIL-nbqQvlwUieLtRF3fhaYBYNfJsrS1poU289-V1JFzZszzQ.webp",
+    "https://i.ytimg.com/vi/3Y4IoKeNCLM/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/fytoP--Pe94/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/qBqN6TVcmHA/maxresdefault.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDKCRo0LRW5ckDjor2du6RZru6eFNRhnysg&s",
+    "https://i-ogp.pximg.net/c/540x540_70/img-master/img/2019/03/29/20/30/39/73934947_p0_square1200.jpg",
+    "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/30758143/30758143.original/r1280x720l?key=ef79a8f904d49d6f6eaea633c148e8e4e9c43c61d44f9deeab2c0ab99ce1a21b",
+    "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/30884270/30884270.original/r1280x720l?key=5ea4accdd5ff29aa5dbc3a43d2468e8be800a61b84eb16cd8c63779616a058ce",
+    "https://pbs.twimg.com/profile_images/1860976392407834624/zD-rxpFs_400x400.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEMVQ3shuhb1ru1aCErVoCQ20M2eMA8LkNrA&s",
+    "https://i.ytimg.com/vi/8L3U2ibZfDA/maxresdefault.jpg",
+    "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/30737140/30737140.original/r1280x720l?key=355e567959711a3cf8072dad89a83d38ddc86fa5f81ce5bd3cdb337cad52cee2",
+    "https://rancolle.com/images/item/uid4_1547437895/154743789595.jpg",
+    "https://i.ytimg.com/vi/N-iYDvqh81I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBI8vZiJpZWnSzXbbBnzODf-b01bg",
+    "https://nicovideo.cdn.nimg.jp/thumbnails/38475969/38475969.34026459.L",
+    "https://i.ytimg.com/vi/d2rtkE3yo4c/maxresdefault.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-bBWUAH1g08EI_UwMQ1LVqUSl-AfMUuuHDQ&s",
+    "https://img.cdn.nimg.jp/s/nicovideo/thumbnails/38637683/38637683.95405424.original/r1280x720l?key=b5af380ead9406b550801275f3acd717a659b7fcc560c0782a5dbd261710459e",
+    "https://i.ytimg.com/vi/vREJ4Hj_ufU/maxresdefault.jpg",
+    "https://cdn-ak.f.st-hatena.com/images/fotolife/M/Matsumae_007/20240809/20240809153224.jpg"
+];
 
-        // ページリロード時にランダムな画像を表示
-        window.onload = function() {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            document.getElementById("random-image").src = images[randomIndex];
-        };
+// 未使用の画像リスト（初期化時にコピー）
+let unusedImages = [...images];
+
+window.onload = function() {
+    if (unusedImages.length === 0) {
+        // 全画像を表示したらリセット
+        unusedImages = [...images];
+    }
+
+    // ランダムに選んで表示
+    const randomIndex = Math.floor(Math.random() * unusedImages.length);
+    const selectedImage = unusedImages.splice(randomIndex, 1)[0]; // 選んだ画像をリストから削除
+    document.getElementById("random-image").src = selectedImage;
+};
+
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>
