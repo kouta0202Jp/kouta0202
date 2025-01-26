@@ -50,8 +50,8 @@
         "https://d2dcan0armyq93.cloudfront.net/photo/odai/600/c6ba6d81358a5a52f863a6ec85263b8d_600.jpg"
     ];
 
-    // 未使用の画像リスト（初期化時にコピー）
-    let unusedImages = [...images];
+    // ローカルストレージから未使用の画像リストを取得
+    let unusedImages = JSON.parse(localStorage.getItem("unusedImages")) || [...images];
 
     window.onload = function() {
         if (unusedImages.length === 0) {
@@ -63,6 +63,9 @@
         const randomIndex = Math.floor(Math.random() * unusedImages.length);
         const selectedImage = unusedImages.splice(randomIndex, 1)[0]; // 選んだ画像をリストから削除
         document.getElementById("random-image").src = selectedImage;
+
+        // 未使用の画像リストをローカルストレージに保存
+        localStorage.setItem("unusedImages", JSON.stringify(unusedImages));
     };
     </script>
 </body>
