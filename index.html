@@ -16,6 +16,18 @@
     font-family: 'Roboto', sans-serif;
   }
   </style>
+  <script>
+  // 現在のドメイン名を取得
+const currentDomain = window.location.hostname;
+
+// 期待するドメイン名
+const targetDomain = "8008.f5.si";
+
+// ドメインが期待するものではない場合、リダイレクト
+if (currentDomain !== targetDomain) {
+    window.location.href = `https://${targetDomain}`;
+}
+</script>
   <script src="https://kit.fontawesome.com/5d917beab5.js" crossorigin="anonymous"></script>
 </head>
 
