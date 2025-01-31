@@ -1,5 +1,0 @@
-翻訳.js
-やり方
-htmlに
-<script src="https://8008.f5.si/js/tool1.js"></script>
-を入れるだけ
