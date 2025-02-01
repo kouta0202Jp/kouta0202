@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アクセスカウンター</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #counter {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>アクセスカウンター</h1>
+    <p>このページの訪問回数: <span id="counter">0</span></p>
+
+    <script>
+        // ローカルストレージからカウント取得
+        let count = localStorage.getItem('page_view') || 0;
+        count++;
+        localStorage.setItem('page_view', count);
+        document.getElementById('counter').textContent = count;
+    </script>
+</body>
+</html>
